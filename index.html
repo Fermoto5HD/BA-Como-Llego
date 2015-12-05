@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Cómo llego</title>
+    <meta name="theme-color" content="#ffd300" />
     <meta name="description" content="">
 
     <meta name="robots" content="noindex,nofollow" />
@@ -674,8 +675,8 @@
           <button class="mdl-button mdl-js-button mdl-button--icon js-favourites_trigger">
             <i class="material-icons">star</i>
           </button>
-          <button class="mdl-button mdl-js-button mdl-button--icon js-map_trigger">
-            <i class="material-icons">place</i>
+          <button class="mdl-button mdl-js-button mdl-button--icon js-info_trigger">
+            <i class="material-icons">info_outline</i>
           </button>
         </div>
       </header>
@@ -722,17 +723,18 @@
             </div>
 
             <div class="trip-settings">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="config-bus">
+              <label class="basic-label">Mostrar recorridos en:</label>
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect checkboxes-alineados" for="config-bus">
                 <input type="checkbox" id="config-bus" class="mdl-checkbox__input" checked>
-                <span class="mdl-checkbox__label">Recorridos en colectivo</span>
+                <span class="mdl-checkbox__label">Colectivo</span>
               </label>
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="config-subway">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect checkboxes-alineados" for="config-subway">
                 <input type="checkbox" id="config-subway" class="mdl-checkbox__input" checked>
-                <span class="mdl-checkbox__label">Recorridos en subte</span>
+                <span class="mdl-checkbox__label">Subte</span>
               </label>
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="config-train">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect checkboxes-alineados" for="config-train">
                 <input type="checkbox" id="config-train" class="mdl-checkbox__input" checked>
-                <span class="mdl-checkbox__label">Recorridos en tren</span>
+                <span class="mdl-checkbox__label">Tren</span>
               </label>
               <label for="" class="basic-label">Caminata máxima: <span class="walkMax">800</span> metros</label>
               <input class="mdl-slider mdl-js-slider" id="config-walk" type="range" min="200" max="1200" value="800" step="100" tabindex="0">
@@ -742,16 +744,14 @@
             <div class="trip-form__row">
               <div class="trip-form__fields">
                 <div class="pale-textfield">
-                  <label class="basic-label" for="trip-from">Desde</label>
-                  <input class="mdl-textfield__input" type="text" id="trip-from" placeholder="Calle, altura y localidad (opcional)" value="" autocomplete="off">
+                  <input class="mdl-textfield__input" type="text" id="trip-from" placeholder="Desde" value="" autocomplete="off">
                   <div class="gps-loading">
                     <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
                     <span>Buscando ubicación actual...</span>
                   </div>
                 </div>
                 <div class="pale-textfield">
-                  <label class="basic-label" for="trip-to">Hasta</label>
-                  <input class="mdl-textfield__input" type="text" id="trip-to" placeholder="Calle, altura y localidad (opcional)" autocomplete="off">
+                  <input class="mdl-textfield__input" type="text" id="trip-to" placeholder="Hasta" autocomplete="off">
                   <div class="gps-loading">
                     <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
                     <span>Buscando ubicación actual...</span>
@@ -777,12 +777,6 @@
               <i class="material-icons">place</i>
             </div>
             <p>Buscá desde donde salís y hasta donde querés ir para ver cómo llegar en transporte público (colectivo, subte y tren).</p>
-            <p>
-              <a class="mdl-button mdl-js-button js-info_trigger">
-                <i class="material-icons">info_outline</i> &nbsp;
-                Sobre la aplicación
-              </a>
-            </p>
           </div>
           <div class="results__loading">
             <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
@@ -791,6 +785,10 @@
           <div class="results-items">
 
           </div>
+          <div style=" height: 100px;"></div> 
+          <button class="mdl-button mdl-js-button mdl-button--fab js-map_trigger boton-mapa">
+            <i class="material-icons">place</i>
+          </button>
         </section>
       </main>
     </div>
@@ -803,5 +801,7 @@
     <script src="vendor/usig/usig.Recorridos.min.js"></script>
     <script src="vendor/usig/usig.GeoCoder.min.js"></script>
     <script src="js/main.js"></script>
+	<!--Mod by FM5HD --> 
+    <link rel="stylesheet" href="css/FM5mods.css">
   </body>
 </html>

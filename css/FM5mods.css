@@ -1,0 +1,22 @@
+.checkboxes-alineados{
+		display: inline-block; 
+		width: 30%;
+}
+
+.boton-mapa{
+	position: fixed; 
+	right: 0; bottom: 0; 
+	margin-bottom: 16px; 
+	margin-right: 16px; 
+	background-color: #ffd300;
+}
+
+* { 
+	-webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
